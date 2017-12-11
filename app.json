@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "GETGUT",
+    "description": "Getgut Customer App",
+    "slug": "getgut",
+    "privacy": "public",
+    "sdkVersion": "23.0.1",
+    "version": "0.5.1",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./App/assets/icons/app-icon.png",
+    "notification": {
+      "icon": "./App/assets/icons/notification-icon.png",
+      "color": "#000000"
+    },
+    "loading": {
+      "icon": "./App/assets/icons/loading-icon.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": ["ttf"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.getgut.getgut",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.getgut.getgut"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "expo-postpublish-slack-notify",
+          "config": {
+            "webhookUrl": "https://hooks.slack.com/services/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"
+          }
+        }
+      ]
+    }
+  }
+}
